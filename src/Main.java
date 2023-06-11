@@ -24,15 +24,20 @@ public class Main {
     public static void task2(){
         System.out.println("Задание 2");
         int clientOS = 0;
+        int iOs = 0;
+        int android = 1;
+        int year = 2015;
         int clientDeviceYear = 2014;
-        if (clientDeviceYear <= 2015 && clientOS == 1) {
+        if (clientDeviceYear <= year && clientOS == android) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientDeviceYear <= 2015 && clientOS == 0) {
+        } else if (clientDeviceYear <= year && clientOS == iOs) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if(clientDeviceYear > 2015 && clientOS == 1) {
+        } else if(clientDeviceYear > year && clientOS == android) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        } else if (clientDeviceYear > 2015 && clientOS == 0) {
+        } else if (clientDeviceYear > year && clientOS == iOs) {
             System.out.println("Установите версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Поддерживаются только iOS и android");
         }
     }
 
